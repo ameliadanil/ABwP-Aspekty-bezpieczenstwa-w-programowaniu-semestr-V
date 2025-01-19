@@ -2,7 +2,7 @@
 Repozytorium z projektem z przedmiotu- Aspekty bezpieczeństwa w programowaniu, semestr V, prowadzący: dr inż. P Bobiński
 
 Projekt przedstawia aplikację webową w Pythonie, która:
-1. Zabezpiecza hasła użytkowników za pomocą szyfrowania (`bcrypt`).
+1. Zabezpiecza hasła użytkowników za pomocą szyfrowania bcrypt.
 2. Pokazuje podatność na atak SQL Injection i implementuje zabezpieczenia przed tym atakiem.
 
 ** Technologie
@@ -20,7 +20,7 @@ Projekt przedstawia aplikację webową w Pythonie, która:
 - Python 3.13
 - Zainstalowane biblioteki:
   ```bash
-  pip install flask bcrypt
+pip install flask bcrypt
 
 ** Problemy napotkane podczas tworzenia projektu:
 
