@@ -19,8 +19,7 @@ Projekt przedstawia aplikację webową w Pythonie, która:
 ** Wymagania 
 - Python 3.13
 - Zainstalowane biblioteki:
-
-pip install flask bcrypt
+  pip install flask bcrypt
 
 ** Problemy napotkane podczas tworzenia projektu:
 
