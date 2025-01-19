@@ -42,3 +42,6 @@ Rozwiązanie: Zmieniłam sposób porównywania haseł w kodzie na:
 
 bcrypt.checkpw(password.encode('utf-8'), user[2])
 
+** working code
+Dodałam dodatkowo folder "working code" z kodem z poszczegółnych etapów tworzenia projektu, żeby można było zobaczyć jak kod zmieniał się na poszczególnych etapach.
+
