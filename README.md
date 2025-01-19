@@ -42,3 +42,4 @@ Opis: Podczas weryfikacji haseł pojawił się błąd AttributeError: 'bytes' ob
 Rozwiązanie: Zmieniłam sposób porównywania haseł w kodzie na:
 
 bcrypt.checkpw(password.encode('utf-8'), user[2])
+
