@@ -28,8 +28,7 @@ pip install flask bcrypt
 
 Opis: Podczas implementacji szyfrowania za pomocą algorytmu AES pojawił się błąd ModuleNotFoundError, ponieważ biblioteka cryptography nie była zainstalowana.
 Rozwiązanie: Użyłam polecenia:
-
-pip install cryptography
+  pip install cryptography
 
 2- Problem: SQL Injection nie działał w pierwszych testach
 
