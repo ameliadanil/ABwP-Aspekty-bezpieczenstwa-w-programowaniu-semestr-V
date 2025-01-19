@@ -19,7 +19,7 @@ Projekt przedstawia aplikację webową w Pythonie, która:
 ** Wymagania 
 - Python 3.13
 - Zainstalowane biblioteki:
-  ```bash
+
 pip install flask bcrypt
 
 ** Problemy napotkane podczas tworzenia projektu:
@@ -28,7 +28,8 @@ pip install flask bcrypt
 
 Opis: Podczas implementacji szyfrowania za pomocą algorytmu AES pojawił się błąd ModuleNotFoundError, ponieważ biblioteka cryptography nie była zainstalowana.
 Rozwiązanie: Użyłam polecenia:
-  pip install cryptography
+
+pip install cryptography
 
 2- Problem: SQL Injection nie działał w pierwszych testach
 
