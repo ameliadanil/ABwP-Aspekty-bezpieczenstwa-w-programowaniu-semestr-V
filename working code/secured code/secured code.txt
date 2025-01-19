@@ -3,7 +3,6 @@ import sqlite3
 
 app = Flask(__name__)
 
-# Tworzenie bazy danych
 DATABASE = 'users.db'
 
 def init_db():
@@ -31,7 +30,6 @@ def login():
     username = request.form['username']
     password = request.form['password']
 
-    # Wersja zabezpieczona przed SQL Injection
     conn = sqlite3.connect(DATABASE)
     cursor = conn.cursor()
     query = "SELECT * FROM users WHERE username = ? AND password = ?"
