@@ -4,16 +4,14 @@ import bcrypt
 
 app = Flask(__name__)
 
-# Tworzenie bazy danych
 DATABASE = 'users.db'
 
 def init_db():
     conn = sqlite3.connect(DATABASE)
     cursor = conn.cursor()
-    cursor.execute('DROP TABLE IF EXISTS users')  # Usunięcie istniejącej tabeli
+    cursor.execute('DROP TABLE IF EXISTS users') 
     cursor.execute('''CREATE TABLE users (id INTEGER PRIMARY KEY, username TEXT, password TEXT)''')
 
-    # Hashowanie haseł
     admin_password = bcrypt.hashpw("admin123".encode('utf-8'), bcrypt.gensalt())
     user_password = bcrypt.hashpw("user123".encode('utf-8'), bcrypt.gensalt())
 
@@ -39,7 +37,6 @@ def login():
     username = request.form['username']
     password = request.form['password']
 
-    # Wersja zabezpieczona z hashowaniem haseł
     conn = sqlite3.connect(DATABASE)
     cursor = conn.cursor()
     query = "SELECT * FROM users WHERE username = ?"
